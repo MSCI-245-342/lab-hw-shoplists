@@ -2,6 +2,7 @@
 require_relative 'db'
 
 # In this file, write code to delete an existing shopping list.
+# When a list is deleted, all of its items are also deleted.
 #
 # The user will use this program from the command line as follows:
 #
@@ -22,7 +23,7 @@ end
 
 shoplist_id = ARGV[0].to_i
 
-# write code to delete the list from the DB.
+# Write code to delete the list from the DB and all of its items.
 #
 # If you cannot delete the list, you should output an
 # error msg: 
