@@ -24,7 +24,8 @@ end
 shoplist_id = ARGV[0].to_i
 item_desc = ARGV[1]
 
-# write code to create the list item in the DB.
+# Write code to create the list item in the DB and add it to 
+# the specified list.
 #
 # If you cannot create the list item, you should output an
 # error msg: 
