@@ -4,24 +4,21 @@ require_relative 'db'
 #
 # The user will use this program from the command line as follows:
 #
-# $ ruby delete_list_item.rb shopping-list-id item-id
+# $ ruby delete_item.rb item-id
 #
-# where they provide the shopping list ID (database primary key) 
-# as a command line argument to the program, and then the item's
-# ID (primary key).
+# where they provide the shopping list item's ID (database primary key).
 #  
-# The code below grabs these arguments for you:
+# The code below grabs this argument for you:
 
-if ( ARGV.length != 2 )
+if ( ARGV.length != 1 )
   puts "usage:"
   puts
-  puts "  ruby delete_list_item.rb shopping-list-id item-id"
+  puts "  ruby delete_item.rb item-id"
   puts
   exit(1)
 end
 
-shoplist_id = ARGV[0].to_i
-item_id = ARGV[1].to_i
+item_id = ARGV[0].to_i
 
 # write code to delete the list item from the DB.
 #
